@@ -1,0 +1,7 @@
+Hello,
+
+Gentle Reminder.
+
+Project End Date is {!Project__c.End_Date__c}.
+
+Thank You.

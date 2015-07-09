@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Employee</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Employees</value>
+    </caseValues>
+    <fields>
+        <help><!-- Enter address here. --></help>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter age of employee. --></help>
+        <label><!-- Age --></label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter annual salary of employee. --></help>
+        <label><!-- Annual CTC --></label>
+        <name>Annual_CTC__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter city name here. --></help>
+        <label><!-- City --></label>
+        <name>City__c</name>
+        <picklistValues>
+            <masterLabel>Bhopal</masterLabel>
+            <translation><!-- Bhopal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gandhi Nagar</masterLabel>
+            <translation><!-- Gandhi Nagar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guntur</masterLabel>
+            <translation><!-- Guntur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hyderabad</masterLabel>
+            <translation><!-- Hyderabad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mumbai</masterLabel>
+            <translation><!-- Mumbai --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pune</masterLabel>
+            <translation><!-- Pune --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surat</masterLabel>
+            <translation><!-- Surat --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select if employee is in organization. --></help>
+        <label><!-- Current Employee --></label>
+        <name>Current_Employee__c</name>
+    </fields>
+    <fields>
+        <help><!-- Current Date --></help>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter employee&apos;s date of birth. --></help>
+        <label><!-- Date of Birth --></label>
+        <name>Date_of_Birth__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter employee&apos;s date of joining in this organization. --></help>
+        <label><!-- Date of Joining --></label>
+        <name>Date_of_Joining__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select employee&apos;s working department --></help>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+        <relationshipLabel><!-- Employees --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter post of employee. --></help>
+        <label><!-- Designation --></label>
+        <name>Designation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select employee&apos;s education. --></help>
+        <label><!-- Education --></label>
+        <name>Education__c</name>
+        <picklistValues>
+            <masterLabel>B Sc</masterLabel>
+            <translation><!-- B Sc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B Tech</masterLabel>
+            <translation><!-- B Tech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCA</masterLabel>
+            <translation><!-- BCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BE</masterLabel>
+            <translation><!-- BE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M Tech</masterLabel>
+            <translation><!-- M Tech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCA</masterLabel>
+            <translation><!-- MCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter Email ID Here. --></help>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter first name of employee. --></help>
+        <label><!-- First name --></label>
+        <name>First_name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Displays first name and last name of employee. --></help>
+        <label><!-- Full Name --></label>
+        <name>Full_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Selected if employee is still working. --></help>
+        <label><!-- Is Active --></label>
+        <name>Is_Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check if employee is on notice period. --></help>
+        <label><!-- Is on Notice Period --></label>
+        <name>Is_on_Notice_Period__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter last name of employee. --></help>
+        <label><!-- Last Name --></label>
+        <name>Last_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lat working day in organization. --></help>
+        <label><!-- Last Working Day --></label>
+        <name>Last_Working_Day__c</name>
+    </fields>
+    <fields>
+        <help><!-- Manager&apos;s Email ID --></help>
+        <label><!-- Manager Contact --></label>
+        <name>Manager_Contact__c</name>
+    </fields>
+    <fields>
+        <help><!-- Manager of employee. --></help>
+        <label><!-- Manager --></label>
+        <name>Manager__c</name>
+        <relationshipLabel><!-- Manager --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter your previous organization name. --></help>
+        <label><!-- Previous Employer --></label>
+        <name>Previous_Employer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique field on employee object to create one to one relationship between employee and role object. --></help>
+        <label><!-- Related To Role --></label>
+        <name>Related_To_Role__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select resignation date. --></help>
+        <label><!-- Resignation Date --></label>
+        <name>Resignation_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select roll of employee. --></help>
+        <label><!-- Role Name --></label>
+        <name>Role_Name__c</name>
+        <relationshipLabel><!-- Employees --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter Social Security Number --></help>
+        <label><!-- SSN --></label>
+        <name>SSN__c</name>
+    </fields>
+    <fields>
+        <help><!-- It is total salary credited to employee&apos;s account till date. --></help>
+        <label><!-- Salary Credited Till Date --></label>
+        <name>Salary_Credited_Till_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select skill set of employee. --></help>
+        <label><!-- Skills --></label>
+        <name>Skills__c</name>
+        <picklistValues>
+            <masterLabel>.Net</masterLabel>
+            <translation><!-- .Net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Apex</masterLabel>
+            <translation><!-- Apex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C#</masterLabel>
+            <translation><!-- C# --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Force.com</masterLabel>
+            <translation><!-- Force.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR</masterLabel>
+            <translation><!-- HR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Java</masterLabel>
+            <translation><!-- Java --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operations</masterLabel>
+            <translation><!-- Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PHP</masterLabel>
+            <translation><!-- PHP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Management</masterLabel>
+            <translation><!-- Project Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Planning</masterLabel>
+            <translation><!-- Project Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QA</masterLabel>
+            <translation><!-- QA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce</masterLabel>
+            <translation><!-- Salesforce --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select state of employee. --></help>
+        <label><!-- State --></label>
+        <name>States__c</name>
+        <picklistValues>
+            <masterLabel>Andhra Pradesh</masterLabel>
+            <translation><!-- Andhra Pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gujarat</masterLabel>
+            <translation><!-- Gujarat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Madhya Pradesh</masterLabel>
+            <translation><!-- Madhya Pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maharashtra</masterLabel>
+            <translation><!-- Maharashtra --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Show employee&apos;s current working status in organization. --></help>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter street address here. --></help>
+        <label><!-- Street --></label>
+        <name>Street__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter year of experience. --></help>
+        <label><!-- Year of Experience --></label>
+        <name>Year_of_Experience__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter employee&apos;s city zip code. --></help>
+        <label><!-- Zip --></label>
+        <name>Zip__c</name>
+    </fields>
+    <layouts>
+        <layout>Employee Layout</layout>
+        <sections>
+            <label><!-- Address Details --></label>
+            <section>Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Department Details --></label>
+            <section>Department Details</section>
+        </sections>
+        <sections>
+            <label><!-- Employee Details --></label>
+            <section>Employee Details</section>
+        </sections>
+        <sections>
+            <label><!-- Salary Details --></label>
+            <section>Salary Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Non-Technical</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Department Details --></label>
+            <section>Department Details</section>
+        </sections>
+        <sections>
+            <label><!-- Employee Details --></label>
+            <section>Employee Details</section>
+        </sections>
+        <sections>
+            <label><!-- Salary Details --></label>
+            <section>Salary Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Technical</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Department Details --></label>
+            <section>Department Details</section>
+        </sections>
+        <sections>
+            <label><!-- Employee Details --></label>
+            <section>Employee Details</section>
+        </sections>
+        <sections>
+            <label><!-- Salary Details --></label>
+            <section>Salary Details</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Non-Technical Employee --></label>
+        <name>Non_Technical_Employee</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Technical Employee --></label>
+        <name>Technical_Employee</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Employee&apos;s minimum age must be 18 years old. --></errorMessage>
+        <name>Age_Must_Be_Greater_Than_18_Year</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Employee age must be between 21 and 30 (21 and 30 inclusive). --></errorMessage>
+        <name>Age_Should_Be_Between_21_And_30</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Date of birth can not be greater than today. --></errorMessage>
+        <name>DOB_Can_Not_Greater_Than_Today</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Resignation Date must be greater than Joining Date. --></errorMessage>
+        <name>Last_Working_Day_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Either of the field can not be blank among Resignation Date and Is On Notice Period. --></errorMessage>
+        <name>Resignation_Date_Enforcing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SSN can not be negative and less than 10 digits. --></errorMessage>
+        <name>SSN_Can_Not_Exceed_10_Digits</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Is on Notice Period checkbox is checked, Is Active checkbox must be checked. --></errorMessage>
+        <name>Status_Check</name>
+    </validationRules>
+</CustomObjectTranslation>

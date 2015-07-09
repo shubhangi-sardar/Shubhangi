@@ -1,0 +1,8 @@
+Hello {!Employee__c.Manager__c}
+
+
+{!Employee__c.Name} is inactive in organization.
+
+Full Name : {!Employee__c.Full_Name__c}
+
+Thank You.

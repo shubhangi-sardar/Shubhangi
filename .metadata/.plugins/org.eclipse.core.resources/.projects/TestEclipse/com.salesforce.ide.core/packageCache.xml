@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<types xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types isSubType="false">
+    <name>ActionLinkGroupTemplate</name>
+  </types>
+  <types isSubType="false">
+    <name>AnalyticSnapshot</name>
+  </types>
+  <types isSubType="false">
+    <members>TestAddition</members>
+    <name>ApexClass</name>
+    <members>Addition</members>
+  </types>
+  <types isSubType="false">
+    <name>ApexComponent</name>
+  </types>
+  <types isSubType="false">
+    <name>ApexPage</name>
+    <members>FirstPage</members>
+    <members>SecondPage</members>
+    <members>TestPage</members>
+  </types>
+  <types isSubType="false">
+    <name>ApexTrigger</name>
+    <members>AdditionTrigger</members>
+  </types>
+  <types isSubType="false">
+    <name>AppMenu</name>
+    <members>AppSwitcher</members>
+    <members>Salesforce1</members>
+  </types>
+  <types isSubType="false">
+    <name>ApprovalProcess</name>
+    <members>Opportunity.Amount_Grater_Than_5000</members>
+  </types>
+  <types isSubType="false">
+    <name>AssignmentRule</name>
+    <members>Case.Standard</members>
+    <members>Lead.Standard</members>
+  </types>
+  <types isSubType="false">
+    <name>AuraDefinitionBundle</name>
+  </types>
+  <types isSubType="false">
+    <name>AuthProvider</name>
+  </types>
+  <types isSubType="false">
+    <name>AutoResponseRule</name>
+  </types>
+  <types isSubType="true" parent="CustomObject">
+    <name>BusinessProcess</name>
+    <members>Lead.Test Lead Process</members>
+  </types>
+  <types isSubType="false">
+    <name>CallCenter</name>
+  </types>
+  <types isSubType="false">
+    <name>ChannelLayout</name>
+  </types>
+  <types isSubType="false">
+    <name>Community</name>
+    <members>Internal Zone</members>
+  </types>
+  <types isSubType="true" parent="CustomObject">
+    <name>CompactLayout</name>
+  </types>
+  <types isSubType="false">
+    <name>ConnectedApp</name>
+  </types>
+  <types isSubType="false">
+    <name>CorsWhitelistOrigin</name>
+  </types>
+  <types isSubType="false">
+    <name>CustomApplication</name>
+    <members>Media_Library</members>
+    <members>Payroll_System</members>
+    <members>standard__AppLauncher</members>
+    <members>standard__Chatter</members>
+    <members>standard__Community</members>
+    <members>standard__Content</members>
+    <members>standard__Marketing</members>
+    <members>standard__Platform</members>
+    <members>standard__Sales</members>
+    <members>standard__Service</members>
+    <members>standard__ServiceConsole</members>
+    <members>standard__Sites</members>
+    <members>standard__Work</members>
+    <members>Warehouse</members>
+  </types>
+  <types isSubType="false">
+    <name>CustomApplicationComponent</name>
+  </types>
+  <types isSubType="true" parent="CustomObject">
+    <name>CustomField</name>
+    <members>Account.Active__c</members>
+    <members>Account.CustomerPriority__c</members>
+    <members>Account.NumberofLocations__c</members>
+    <members>Account.SLA__c</members>
+    <members>Account.SLAExpirationDate__c</members>
+    <members>Account.SLASerialNumber__c</members>
+    <members>Account.Test_Permission_Set__c</members>
+    <members>Account.UpsellOpportunity__c</members>
+    <members>Allotment__c.Employee_ID__c</members>
+    <members>Allotment__c.Project_ID__c</members>
+    <members>Case.EngineeringReqNumber__c</members>
+    <members>Case.PotentialLiability__c</members>
+    <members>Case.Product__c</members>
+    <members>Case.SLAViolation__c</members>
+    <members>Client__c.Client_Description__c</members>
+    <members>Client__c.Email_ID__c</members>
+    <members>Client__c.Mobile_Number__c</members>
+    <members>Client__c.Point_of_Contact__c</members>
+    <members>Contact.Languages__c</members>
+    <members>Contact.Level__c</members>
+    <members>Contact.Previous_Employer__c</members>
+    <members>Contact.Year_of_Experience__c</members>
+    <members>Customer__c.Address__c</members>
+    <members>Customer__c.First_Name__c</members>
+    <members>Customer__c.Last_Name__c</members>
+    <members>Department__c.Department_Name__c</members>
+    <members>Department__c.Description__c</members>
+    <members>Employee__c.Address__c</members>
+    <members>Employee__c.Age__c</members>
+    <members>Employee__c.Annual_CTC__c</members>
+    <members>Employee__c.City__c</members>
+    <members>Employee__c.Current_Employee__c</members>
+    <members>Employee__c.Date__c</members>
+    <members>Employee__c.Date_of_Birth__c</members>
+    <members>Employee__c.Date_of_Joining__c</members>
+    <members>Employee__c.Department__c</members>
+    <members>Employee__c.Designation__c</members>
+    <members>Employee__c.Education__c</members>
+    <members>Employee__c.Email__c</members>
+    <members>Employee__c.First_name__c</members>
+    <members>Employee__c.Full_Name__c</members>
+    <members>Employee__c.Is_Active__c</members>
+    <members>Employee__c.Is_on_Notice_Period__c</members>
+    <members>Employee__c.Last_Name__c</members>
+    <members>Employee__c.Last_Working_Day__c</members>
+    <members>Employee__c.Manager__c</members>
+    <members>Employee__c.Manager_Contact__c</members>
+    <members>Employee__c.Previous_Employer__c</members>
+    <members>Employee__c.Related_To_Role__c</members>
+    <members>Employee__c.Resignation_Date__c</members>
+    <members>Employee__c.Role_Name__c</members>
+    <members>Employee__c.Salary_Credited_Till_Date__c</members>
+    <members>Employee__c.Skills__c</members>
+    <members>Employee__c.SSN__c</members>
+    <members>Employee__c.States__c</members>
+    <members>Employee__c.Status__c</members>
+    <members>Employee__c.Street__c</members>
+    <members>Employee__c.Year_of_Experience__c</members>
+    <members>Employee__c.Zip__c</members>
+    <members>Invoice_Statement__c.Description__c</members>
+    <members>Invoice_Statement__c.Status__c</members>
+    <members>Invoice_Statement_Media_Library__c.Customer_ID__c</members>
+    <members>Invoice_Statement_Media_Library__c.First_Name__c</members>
+    <members>Invoice_Statement_Media_Library__c.Last_Name__c</members>
+    <members>Lead.CurrentGenerators__c</members>
+    <members>Lead.Date__c</members>
+    <members>Lead.Follow_Up_Of_Date__c</members>
+    <members>Lead.NumberofLocations__c</members>
+    <members>Lead.Primary__c</members>
+    <members>Lead.ProductInterest__c</members>
+    <members>Lead.SICCode__c</members>
+    <members>Line_Item__c.Invoice_Statement__c</members>
+    <members>Line_Item__c.Merchandise_Name__c</members>
+    <members>Line_Item__c.Unit_Price__c</members>
+    <members>Line_Item__c.Unit_Sold__c</members>
+    <members>Media_Inventory__c.Description__c</members>
+    <members>Media_Inventory__c.Media_Type__c</members>
+    <members>Media_Inventory__c.Price__c</members>
+    <members>Media_Inventory__c.Quantity__c</members>
+    <members>Media_Inventory__c.Year__c</members>
+    <members>Media_Line_Item__c.Media_Invoice_Statement__c</members>
+    <members>Media_Line_Item__c.Media_Name__c</members>
+    <members>Media_Line_Item__c.Quantity__c</members>
+    <members>Media_Line_Item__c.Total_Cost__c</members>
+    <members>Media_Line_Item__c.Unit_Price__c</members>
+    <members>Merchandise__c.Description__c</members>
+    <members>Merchandise__c.Price__c</members>
+    <members>Merchandise__c.Total_Inventory__c</members>
+    <members>Object_1__c.Result__c</members>
+    <members>Object_1__c.Result_Of_Apex__c</members>
+    <members>Object_1__c.Value_1__c</members>
+    <members>Object_1__c.Value_2__c</members>
+    <members>Object_1__c.Value__c</members>
+    <members>Object_2__c.Object_1__c</members>
+    <members>Object_2__c.Value__c</members>
+    <members>Opportunity.CurrentGenerators__c</members>
+    <members>Opportunity.DeliveryInstallationStatus__c</members>
+    <members>Opportunity.MainCompetitors__c</members>
+    <members>Opportunity.OrderNumber__c</members>
+    <members>Opportunity.TrackingNumber__c</members>
+    <members>Project__c.Client__c</members>
+    <members>Project__c.Date__c</members>
+    <members>Project__c.End_Date__c</members>
+    <members>Project__c.Implementation_Type__c</members>
+    <members>Project__c.Manager__c</members>
+    <members>Project__c.Project_Description__c</members>
+    <members>Project__c.Project_Manager_Contact__c</members>
+    <members>Project__c.Start_Date__c</members>
+    <members>Project__c.Status__c</members>
+    <members>Role__c.Role_Description__c</members>
+    <members>Salary_Detail__c.Bank_Account_Number__c</members>
+    <members>Salary_Detail__c.Bank_Details__c</members>
+    <members>Salary_Detail__c.Basic__c</members>
+    <members>Salary_Detail__c.Employee__c</members>
+    <members>Salary_Detail__c.Gross_Salary__c</members>
+    <members>Salary_Detail__c.HRA__c</members>
+    <members>Salary_Detail__c.Mode_of_Pyment__c</members>
+    <members>Salary_Detail__c.PF_Deduction__c</members>
+    <members>Salary_Detail__c.Salary_Credit_Date__c</members>
+    <members>Salary_Detail__c.Special_Allowance__c</members>
+    <members>Salary_Detail__c.Total_Earning__c</members>
+    <members>Sample__c.Invoice_Statement__c</members>
+    <members>Sample__c.Merchandise__c</members>
+  </types>
+  <types isSubType="true" parent="CustomLabels">
+    <name>CustomLabel</name>
+  </types>
+  <types isSubType="false">
+    <name>CustomLabels</name>
+    <members>CustomLabels</members>
+  </types>
+  <types isSubType="false">
+    <name>CustomMetadata</name>
+  </types>
+  <types isSubType="false">
+    <name>CustomObject</name>
+    <members>Allotment__c</members>
+    <members>Client__c</members>
+    <members>Customer__c</members>
+    <members>Department__c</members>
+    <members>Employee__c</members>
+    <members>Invoice_Statement__c</members>
+    <members>Invoice_Statement_Media_Library__c</members>
+    <members>Line_Item__c</members>
+    <members>Media_Inventory__c</members>
+    <members>Media_Line_Item__c</members>
+    <members>Merchandise__c</members>
+    <members>Object_1__c</members>
+    <members>Object_2__c</members>
+    <members>Project__c</members>
+    <members>Role__c</members>
+    <members>Salary_Detail__c</members>
+    <members>Sample__c</members>
+  </types>
+  <types isSubType="false">
+    <name>CustomObjectTranslation</name>
+    <members>Allotment__c-en_US</members>
+    <members>Client__c-en_US</members>
+    <members>Customer__c-en_US</members>
+    <members>Department__c-en_US</members>
+    <members>Employee__c-en_US</members>
+    <members>Invoice_Statement__c-en_US</members>
+    <members>Invoice_Statement_Media_Library__c-en_US</members>
+    <members>Line_Item__c-en_US</members>
+    <members>Media_Inventory__c-en_US</members>
+    <members>Media_Line_Item__c-en_US</members>
+    <members>Merchandise__c-en_US</members>
+    <members>Object_1__c-en_US</members>
+    <members>Object_2__c-en_US</members>
+    <members>Project__c-en_US</members>
+    <members>Role__c-en_US</members>
+    <members>Salary_Detail__c-en_US</members>
+    <members>Sample__c-en_US</members>
+  </types>
+  <types isSubType="false">
+    <name>CustomPageWebLink</name>
+  </types>
+  <types isSubType="false">
+    <name>CustomPermission</name>
+  </types>
+  <types isSubType="false">
+    <name>CustomSite</name>
+  </types>
+  <types isSubType="false">
+    <name>CustomTab</name>
+    <members>Client__c</members>
+    <members>Customer__c</members>
+    <members>Department__c</members>
+    <members>Employee__c</members>
+    <members>Invoice_Statement__c</members>
+    <members>Invoice_Statement_Media_Library__c</members>
+    <members>Media_Inventory__c</members>
+    <members>Merchandise__c</members>
+    <members>Object_1__c</members>
+    <members>Object_2__c</members>
+    <members>Project__c</members>
+    <members>Role__c</members>
+    <members>Sample__c</members>
+  </types>
+  <types isSubType="false">
+    <name>Dashboard</name>
+  </types>
+  <types isSubType="false">
+    <name>DataCategoryGroup</name>
+  </types>
+  <types isSubType="false">
+    <name>Document</name>
+  </types>
+  <types isSubType="false">
+    <name>EmailTemplate</name>
+    <members>unfiled$public</members>
+    <members>unfiled$public/Amount_Greater_Than_5000</members>
+    <members>unfiled$public/Big_Deal_Alert</members>
+    <members>unfiled$public/Employee_is_inactive_in_organization</members>
+    <members>unfiled$public/Follow_Up_Date</members>
+    <members>unfiled$public/MarketingProductInquiryResponse</members>
+    <members>unfiled$public/Media_Stock_Alert</members>
+    <members>unfiled$public/New_Project_Created</members>
+    <members>unfiled$public/Project_Due_date</members>
+    <members>unfiled$public/SalesNewCustomerEmail</members>
+    <members>unfiled$public/SupportCaseAssignmentNotification</members>
+    <members>unfiled$public/SupportCaseCreatedPhoneInquiries</members>
+    <members>unfiled$public/SupportCaseCreatedWebInquiries</members>
+    <members>unfiled$public/SupportCaseResponse</members>
+    <members>unfiled$public/SupportEscalatedCaseNotification</members>
+    <members>unfiled$public/SupportEscalatedCaseReassignment</members>
+    <members>unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE</members>
+    <members>unfiled$public/SupportSelfServiceNewLoginandPassword</members>
+    <members>unfiled$public/SUPPORTSelfServiceNewUserLoginInformationSAMPLE</members>
+    <members>unfiled$public/SupportSelfServiceResetPassword</members>
+    <members>unfiled$public/SUPPORTSelfServiceResetPasswordSAMPLE</members>
+  </types>
+  <types isSubType="false">
+    <name>EscalationRule</name>
+    <members>Case.Standard</members>
+  </types>
+  <types isSubType="false">
+    <name>ExternalDataSource</name>
+  </types>
+  <types isSubType="true" parent="CustomObject">
+    <name>FieldSet</name>
+  </types>
+  <types isSubType="false">
+    <name>FlexiPage</name>
+  </types>
+  <types isSubType="false">
+    <name>Flow</name>
+  </types>
+  <types isSubType="false">
+    <name>Group</name>
+    <members>All_Users_Group</members>
+  </types>
+  <types isSubType="false">
+    <name>HomePageComponent</name>
+  </types>
+  <types isSubType="false">
+    <name>HomePageLayout</name>
+    <members>DE Default</members>
+  </types>
+  <types isSubType="false">
+    <name>Layout</name>
+    <members>Account-Account %28Marketing%29 Layout</members>
+    <members>Account-Account %28Sales%29 Layout</members>
+    <members>Account-Account %28Support%29 Layout</members>
+    <members>Account-Account Layout</members>
+    <members>Allotment__c-Allotment Layout</members>
+    <members>Asset-Asset Layout</members>
+    <members>Campaign-Campaign Layout</members>
+    <members>CampaignMember-Campaign Member Page Layout</members>
+    <members>Case-Case %28Marketing%29 Layout</members>
+    <members>Case-Case %28Sales%29 Layout</members>
+    <members>Case-Case %28Support%29 Layout</members>
+    <members>Case-Case Layout</members>
+    <members>CaseClose-Close Case Layout</members>
+    <members>Client__c-Client Layout</members>
+    <members>CollaborationGroup-Group Layout</members>
+    <members>Contact-Contact %28Marketing%29 Layout</members>
+    <members>Contact-Contact %28Sales%29 Layout</members>
+    <members>Contact-Contact %28Support%29 Layout</members>
+    <members>Contact-Contact Layout</members>
+    <members>Contact-Experienced</members>
+    <members>Contact-Fresher</members>
+    <members>ContentVersion-Content Version Layout</members>
+    <members>Contract-Contract Layout</members>
+    <members>Customer__c-Customer Layout</members>
+    <members>DandBCompany-D%26B Company Layout</members>
+    <members>Department__c-Department Layout</members>
+    <members>DuplicateRecordSet-Duplicate Record Set Layout</members>
+    <members>Employee__c-Employee Layout</members>
+    <members>Employee__c-Non-Technical</members>
+    <members>Employee__c-Technical</members>
+    <members>Event-Event Layout</members>
+    <members>FeedItem-Feed Item Layout</members>
+    <members>Global-Global Layout</members>
+    <members>Idea-Idea Layout</members>
+    <members>Invoice_Statement__c-Invoice Statement Layout</members>
+    <members>Invoice_Statement_Media_Library__c-Invoice Statement Layout</members>
+    <members>Lead-Lead %28Marketing%29 Layout</members>
+    <members>Lead-Lead %28Sales%29 Layout</members>
+    <members>Lead-Lead %28Support%29 Layout</members>
+    <members>Lead-Lead Layout</members>
+    <members>Line_Item__c-Line Item Layout</members>
+    <members>Macro-Macro Layout</members>
+    <members>Media_Inventory__c-Media Inventory Layout</members>
+    <members>Media_Line_Item__c-Media Line Item Layout</members>
+    <members>Merchandise__c-Merchandise Layout</members>
+    <members>Object_1__c-Object 1 Layout</members>
+    <members>Object_2__c-Object 2 Layout</members>
+    <members>Opportunity-Opportunity %28Marketing%29 Layout</members>
+    <members>Opportunity-Opportunity %28Sales%29 Layout</members>
+    <members>Opportunity-Opportunity %28Support%29 Layout</members>
+    <members>Opportunity-Opportunity Layout</members>
+    <members>OpportunityLineItem-Opportunity Product Layout</members>
+    <members>Order-Order Layout</members>
+    <members>OrderItem-Order Product Layout</members>
+    <members>Pricebook2-Price Book Layout</members>
+    <members>PricebookEntry-Price Book Entry Layout</members>
+    <members>Product2-Product Layout</members>
+    <members>Project__c-Project Layout</members>
+    <members>Role__c-Role Layout</members>
+    <members>Salary_Detail__c-Salary Detail Layout</members>
+    <members>Sample__c-Sample Layout</members>
+    <members>SocialPersona-Social Persona Layout</members>
+    <members>SocialPost-Social Post Layout</members>
+    <members>Solution-Solution Layout</members>
+    <members>Task-Task Layout</members>
+    <members>User-User Layout</members>
+    <members>UserProvAccount-User Provisioning Account Layout</members>
+    <members>UserProvisioningLog-User Provisioning Log Layout</members>
+    <members>UserProvisioningRequest-User Provisioning Request Layout</members>
+  </types>
+  <types isSubType="false">
+    <name>Letterhead</name>
+  </types>
+  <types isSubType="true" parent="CustomObject">
+    <name>ListView</name>
+    <members>Account.AllAccounts</members>
+    <members>Account.MyAccounts</members>
+    <members>Account.NewLastWeek</members>
+    <members>Account.NewThisWeek</members>
+    <members>Account.PlatinumandGoldSLACustomers</members>
+    <members>Activity.AllActivities</members>
+    <members>Activity.MyActivities</members>
+    <members>Activity.TodaysTasks</members>
+    <members>Activity.UpcomingEvents</members>
+    <members>Asset.AllAssets</members>
+    <members>Campaign.AllActiveCampaigns</members>
+    <members>Campaign.MyActiveCampaigns</members>
+    <members>Case.AllClosedCases</members>
+    <members>Case.AllOpenCases</members>
+    <members>Case.Case_Queue_Case</members>
+    <members>Case.MyCases</members>
+    <members>Case.MyOpenCases</members>
+    <members>Client__c.All</members>
+    <members>Contact.AllContacts</members>
+    <members>Contact.BirthdaysThisMonth</members>
+    <members>Contact.MyContacts</members>
+    <members>Contact.NewLastWeek</members>
+    <members>Contact.NewThisWeek</members>
+    <members>Contract.AllActivatedContracts</members>
+    <members>Contract.AllContracts</members>
+    <members>Contract.AllDraftContracts</members>
+    <members>Contract.AllInApprovalContracts</members>
+    <members>Contract.MyActivatedContracts</members>
+    <members>Contract.MyDraftContracts</members>
+    <members>Contract.MyInApprovalContracts</members>
+    <members>Customer__c.All</members>
+    <members>Department__c.All</members>
+    <members>Employee__c.All_Employees_On_Notice_Period</members>
+    <members>Employee__c.All_Inactive_Employees</members>
+    <members>Idea.Ideas_Last_7_Days</members>
+    <members>Invoice_Statement__c.All</members>
+    <members>Invoice_Statement_Media_Library__c.All</members>
+    <members>Lead.AllOpenLeads</members>
+    <members>Lead.MyUnreadLeads</members>
+    <members>Lead.TodaysLeads</members>
+    <members>Lead.ViewCustom1</members>
+    <members>Lead.ViewCustom2</members>
+    <members>Media_Inventory__c.All</members>
+    <members>Merchandise__c.All</members>
+    <members>Object_1__c.All</members>
+    <members>Object_2__c.All</members>
+    <members>Opportunity.AllOpportunities</members>
+    <members>Opportunity.ClosingNextMonth</members>
+    <members>Opportunity.ClosingThisMonth</members>
+    <members>Opportunity.MyOpportunities</members>
+    <members>Opportunity.NewLastWeek</members>
+    <members>Opportunity.NewThisWeek</members>
+    <members>Opportunity.Private</members>
+    <members>Opportunity.Won</members>
+    <members>Order.AllActivatedOrders</members>
+    <members>Order.AllDraftOrders</members>
+    <members>Order.AllOrders</members>
+    <members>Product2.AllProducts</members>
+    <members>Project__c.All</members>
+    <members>Role__c.All</members>
+    <members>Sample__c.All</members>
+    <members>Solution.AllReviewedSolutions</members>
+    <members>Solution.AllUnreviewedSolutions</members>
+    <members>User.ActiveUsers</members>
+    <members>User.AdminUsers</members>
+    <members>User.AllUsers</members>
+    <members>WorkFeedbackRequest.All</members>
+    <members>WorkFeedbackRequest.All</members>
+  </types>
+  <types isSubType="false">
+    <name>MatchingRule</name>
+    <members>Account.Standard_Account_Match_Rule_v1_0</members>
+    <members>Contact.Standard_Contact_Match_Rule_v1_1</members>
+    <members>Lead.Standard_Lead_Match_Rule_v1_0</members>
+  </types>
+  <types isSubType="false">
+    <name>MatchingRules</name>
+    <members>Account</members>
+    <members>Contact</members>
+    <members>Lead</members>
+  </types>
+  <types isSubType="false">
+    <name>NamedCredential</name>
+  </types>
+  <types isSubType="false">
+    <name>PermissionSet</name>
+    <members>Non_Technical_Delete_Employee_Permission_Set</members>
+    <members>Test_Permission_Set</members>
+  </types>
+  <types isSubType="false">
+    <name>PostTemplate</name>
+  </types>
+  <types isSubType="false">
+    <name>Profile</name>
+    <members>Admin</members>
+    <members>Chatter External User</members>
+    <members>Chatter Free User</members>
+    <members>Chatter Moderator User</members>
+    <members>ContractManager</members>
+    <members>Cross Org Data Proxy User</members>
+    <members>Custom%3A Marketing Profile</members>
+    <members>Custom%3A Sales Profile</members>
+    <members>Custom%3A Support Profile</members>
+    <members>Customer Community Login User</members>
+    <members>Customer Community Plus Login User</members>
+    <members>Customer Community Plus User</members>
+    <members>Customer Community User</members>
+    <members>Customer Portal Manager Custom</members>
+    <members>Customer Portal Manager Standard</members>
+    <members>External Identity User</members>
+    <members>Force%2Ecom - App Subscription User</members>
+    <members>Force%2Ecom - Free User</members>
+    <members>Gold Partner User</members>
+    <members>HighVolumePortal</members>
+    <members>Identity User</members>
+    <members>MarketingProfile</members>
+    <members>Non Technical</members>
+    <members>Partner App Subscription User</members>
+    <members>Partner Community Login User</members>
+    <members>Partner Community User</members>
+    <members>PlatformPortal</members>
+    <members>ReadOnly</members>
+    <members>Silver Partner User</members>
+    <members>SolutionManager</members>
+    <members>Standard</members>
+    <members>StandardAul</members>
+    <members>Technical</members>
+    <members>Test 2 Profile</members>
+    <members>Test Profile</members>
+    <members>Test System Admin</members>
+    <members>Work%2Ecom Only User</members>
+  </types>
+  <types isSubType="false">
+    <name>Queue</name>
+    <members>Case_Queue</members>
+  </types>
+  <types isSubType="false">
+    <name>QuickAction</name>
+    <members>Case.NewChildCase</members>
+    <members>CollaborationGroup.NewGroupMember</members>
+    <members>CollaborationGroup.NewGroupRecord</members>
+    <members>FeedItem.NewTaskFromFeedItem</members>
+    <members>LogACall</members>
+    <members>NewAccount</members>
+    <members>NewCase</members>
+    <members>NewContact</members>
+    <members>NewEvent</members>
+    <members>NewGroup</members>
+    <members>NewLead</members>
+    <members>NewNote</members>
+    <members>NewOpportunity</members>
+    <members>NewTask</members>
+    <members>Task.Defer</members>
+    <members>Task.Defer_0</members>
+    <members>Task.Defer_1</members>
+    <members>Task.EditDescription</members>
+    <members>Task.EditDescription_0</members>
+    <members>Task.EditDescription_1</members>
+    <members>Task.UpdatePriority</members>
+    <members>Task.UpdatePriority_0</members>
+    <members>Task.UpdatePriority_1</members>
+    <members>Task.UpdateStatus</members>
+    <members>Task.UpdateStatus_0</members>
+    <members>Task.UpdateStatus_1</members>
+  </types>
+  <types isSubType="true" parent="CustomObject">
+    <name>RecordType</name>
+    <members>Contact.Experience</members>
+    <members>Contact.Fresher</members>
+    <members>Employee__c.Non_Technical_Employee</members>
+    <members>Employee__c.Technical_Employee</members>
+    <members>Lead.DNC</members>
+    <members>Lead.Landline</members>
+    <members>Lead.Mobile</members>
+    <members>Lead.No_Number</members>
+  </types>
+  <types isSubType="false">
+    <name>RemoteSiteSetting</name>
+    <members>ApexDevNet</members>
+  </types>
+  <types isSubType="false">
+    <name>Report</name>
+    <members>unfiled$public</members>
+  </types>
+  <types isSubType="false">
+    <name>ReportType</name>
+  </types>
+  <types isSubType="false">
+    <name>Role</name>
+    <members>CEO</members>
+    <members>ChannelSalesTeam</members>
+    <members>CustomerSupportInternational</members>
+    <members>CustomerSupportNorthAmerica</members>
+    <members>Director</members>
+    <members>DirectorChannelSales</members>
+    <members>DirectorDirectSales</members>
+    <members>EasternSalesTeam</members>
+    <members>General_Manager</members>
+    <members>HR_Manager</members>
+    <members>InstallationRepairServices</members>
+    <members>MarketingTeam</members>
+    <members>Operation_Manager</members>
+    <members>SVPCustomerServiceSupport</members>
+    <members>SVPHumanResources</members>
+    <members>SVPSalesMarketing</members>
+    <members>VPInternationalSales</members>
+    <members>VPMarketing</members>
+    <members>VPNorthAmericanSales</members>
+    <members>WesternSalesTeam</members>
+  </types>
+  <types isSubType="false">
+    <name>SamlSsoConfig</name>
+  </types>
+  <types isSubType="false">
+    <name>Scontrol</name>
+  </types>
+  <types isSubType="false">
+    <name>Settings</name>
+    <members>Account</members>
+    <members>Activities</members>
+    <members>Address</members>
+    <members>BusinessHours</members>
+    <members>Case</members>
+    <members>ChatterAnswers</members>
+    <members>Company</members>
+    <members>Contract</members>
+    <members>Entitlement</members>
+    <members>Forecasting</members>
+    <members>Ideas</members>
+    <members>Knowledge</members>
+    <members>LiveAgent</members>
+    <members>Mobile</members>
+    <members>Name</members>
+    <members>Opportunity</members>
+    <members>Order</members>
+    <members>PersonalJourney</members>
+    <members>Product</members>
+    <members>Quote</members>
+    <members>Security</members>
+  </types>
+  <types isSubType="false">
+    <name>SharingCriteriaRule</name>
+    <members>Employee__c.Current_Employee_Criteria</members>
+  </types>
+  <types isSubType="false">
+    <name>SharingOwnerRule</name>
+  </types>
+  <types isSubType="true" parent="CustomObject">
+    <name>SharingReason</name>
+  </types>
+  <types isSubType="false">
+    <name>SharingRules</name>
+    <members>Account</members>
+    <members>Asset</members>
+    <members>Campaign</members>
+    <members>Case</members>
+    <members>Client__c</members>
+    <members>Contact</members>
+    <members>Customer__c</members>
+    <members>Department__c</members>
+    <members>Employee__c</members>
+    <members>Invoice_Statement__c</members>
+    <members>Invoice_Statement_Media_Library__c</members>
+    <members>Lead</members>
+    <members>Media_Inventory__c</members>
+    <members>Merchandise__c</members>
+    <members>Object_1__c</members>
+    <members>Object_2__c</members>
+    <members>Opportunity</members>
+    <members>Order</members>
+    <members>Project__c</members>
+    <members>Role__c</members>
+    <members>Sample__c</members>
+    <members>User</members>
+  </types>
+  <types isSubType="false">
+    <name>SharingSet</name>
+  </types>
+  <types isSubType="false">
+    <name>SiteDotCom</name>
+  </types>
+  <types isSubType="false">
+    <name>StandardObject</name>
+    <members>Account</members>
+    <members>AccountCleanInfo</members>
+    <members>AccountContactRole</members>
+    <members>Activity</members>
+    <members>Asset</members>
+    <members>Campaign</members>
+    <members>CampaignMember</members>
+    <members>Case</members>
+    <members>CaseContactRole</members>
+    <members>Contact</members>
+    <members>ContactCleanInfo</members>
+    <members>ContentVersion</members>
+    <members>Contract</members>
+    <members>ContractContactRole</members>
+    <members>DandBCompany</members>
+    <members>DuplicateRecordItem</members>
+    <members>DuplicateRecordSet</members>
+    <members>Event</members>
+    <members>FeedItem</members>
+    <members>ForecastingCategoryMapping</members>
+    <members>Idea</members>
+    <members>Lead</members>
+    <members>LeadCleanInfo</members>
+    <members>Macro</members>
+    <members>MacroAction</members>
+    <members>MacroInstruction</members>
+    <members>Opportunity</members>
+    <members>OpportunityCompetitor</members>
+    <members>OpportunityContactRole</members>
+    <members>OpportunityLineItem</members>
+    <members>Order</members>
+    <members>OrderItem</members>
+    <members>PartnerRole</members>
+    <members>Pricebook2</members>
+    <members>PricebookEntry</members>
+    <members>Product2</members>
+    <members>Site</members>
+    <members>SocialPersona</members>
+    <members>Solution</members>
+    <members>StreamingChannel</members>
+    <members>Task</members>
+    <members>User</members>
+    <members>UserProvisioningRequest</members>
+  </types>
+  <types isSubType="false">
+    <name>StaticResource</name>
+  </types>
+  <types isSubType="true" parent="CustomObject">
+    <name>ValidationRule</name>
+    <members>Employee__c.Age_Must_Be_Greater_Than_18_Year</members>
+    <members>Employee__c.Age_Should_Be_Between_21_And_30</members>
+    <members>Employee__c.DOB_Can_Not_Greater_Than_Today</members>
+    <members>Employee__c.Last_Working_Day_Validation</members>
+    <members>Employee__c.Resignation_Date_Enforcing</members>
+    <members>Employee__c.SSN_Can_Not_Exceed_10_Digits</members>
+    <members>Employee__c.Status_Check</members>
+    <members>Object_2__c.Test_One_To_One_Relationship</members>
+    <members>Salary_Detail__c.Length_of_bank_account_number</members>
+    <members>Salary_Detail__c.No_change_to_account_number</members>
+    <members>Salary_Detail__c.Salary_Record_Can_Not_Be_Created</members>
+  </types>
+  <types isSubType="true" parent="CustomObject">
+    <name>WebLink</name>
+    <members>Account.Billing</members>
+    <members>Campaign.ViewCampaignInfluenceReport</members>
+    <members>Case.UpsellCrosssellOpportunity</members>
+    <members>Opportunity.DeliveryStatus</members>
+  </types>
+  <types isSubType="false">
+    <name>Workflow</name>
+    <members>Account</members>
+    <members>Allotment__c</members>
+    <members>Asset</members>
+    <members>Campaign</members>
+    <members>CampaignMember</members>
+    <members>Case</members>
+    <members>Client__c</members>
+    <members>Contact</members>
+    <members>Contract</members>
+    <members>Customer__c</members>
+    <members>DandBCompany</members>
+    <members>Department__c</members>
+    <members>DuplicateRecordItem</members>
+    <members>DuplicateRecordSet</members>
+    <members>Employee__c</members>
+    <members>Event</members>
+    <members>FeedItem</members>
+    <members>Idea</members>
+    <members>Invoice_Statement__c</members>
+    <members>Invoice_Statement_Media_Library__c</members>
+    <members>Lead</members>
+    <members>Line_Item__c</members>
+    <members>Macro</members>
+    <members>MacroAction</members>
+    <members>MacroInstruction</members>
+    <members>Media_Inventory__c</members>
+    <members>Media_Line_Item__c</members>
+    <members>Merchandise__c</members>
+    <members>Object_1__c</members>
+    <members>Object_2__c</members>
+    <members>Opportunity</members>
+    <members>OpportunityLineItem</members>
+    <members>Order</members>
+    <members>OrderItem</members>
+    <members>Organization</members>
+    <members>Product2</members>
+    <members>Project__c</members>
+    <members>Role__c</members>
+    <members>Salary_Detail__c</members>
+    <members>Sample__c</members>
+    <members>Site</members>
+    <members>SocialPersona</members>
+    <members>Solution</members>
+    <members>StreamingChannel</members>
+    <members>Task</members>
+    <members>User</members>
+    <members>UserLicense</members>
+    <members>UserProvisioningRequest</members>
+  </types>
+  <types isSubType="true" parent="Workflow">
+    <name>WorkflowAlert</name>
+    <members>Employee__c.Employee_is_inactive_in_organization</members>
+    <members>Lead.Follow_Up_Date_Has_Been_Elapsed</members>
+    <members>Media_Inventory__c.Stock_Alert</members>
+    <members>Opportunity.Big_Deal_Alert_Email</members>
+    <members>Project__c.Project_arrives_in_organization</members>
+    <members>Project__c.Project_due_date_is_after_5_days</members>
+  </types>
+  <types isSubType="true" parent="Workflow">
+    <name>WorkflowFieldUpdate</name>
+    <members>Employee__c.Auto_Populate_Manager_Email</members>
+    <members>Employee__c.Change_Record_Type_To_Non_Technical</members>
+    <members>Employee__c.Employee_Inactive</members>
+    <members>Employee__c.Employee_Is_Inactive</members>
+    <members>Employee__c.One_To_One_Relationship</members>
+    <members>Employee__c.Update_Is_Active</members>
+    <members>Employee__c.Update_Is_On_Notice_Period</members>
+    <members>Lead.DNC_Record_Type_Update</members>
+    <members>Lead.Landline_Record_Type_Update</members>
+    <members>Lead.Mobile_Record_Type_Update</members>
+    <members>Lead.No_Number_Record_Type_Update</members>
+    <members>Media_Line_Item__c.Quantity_update</members>
+    <members>Project__c.Project_Status_Closed</members>
+  </types>
+  <types isSubType="true" parent="Workflow">
+    <name>WorkflowKnowledgePublish</name>
+  </types>
+  <types isSubType="true" parent="Workflow">
+    <name>WorkflowOutboundMessage</name>
+  </types>
+  <types isSubType="true" parent="Workflow">
+    <name>WorkflowRule</name>
+    <members>Employee__c.Change Record Type To Non Technical</members>
+    <members>Employee__c.Employee Is Inactive</members>
+    <members>Employee__c.Employee_Is_ Active_Or_Not</members>
+    <members>Employee__c.Employee_Is_On_Notice_Period</members>
+    <members>Employee__c.One TO One Between Employee And Role</members>
+    <members>Event.test</members>
+    <members>Lead.Follow Up Date Elapsed</members>
+    <members>Lead.Update Record Type Landline</members>
+    <members>Lead.Update Record Type Mobile</members>
+    <members>Lead.Update Record Type No Number</members>
+    <members>Lead.Update Record Types DND</members>
+    <members>Media_Inventory__c.Maintain_Stock</members>
+    <members>Media_Line_Item__c.Quantity field update</members>
+    <members>Opportunity.Big Deal Alert</members>
+    <members>Project__c.Change Status To Closed%2E</members>
+    <members>Project__c.Project Due date</members>
+    <members>Project__c.Project Record Is Created</members>
+  </types>
+  <types isSubType="true" parent="Workflow">
+    <name>WorkflowSend</name>
+  </types>
+  <types isSubType="true" parent="Workflow">
+    <name>WorkflowTask</name>
+    <members>Project__c.New_project_assignment</members>
+  </types>
+  <types isSubType="false">
+    <name>XOrgHub</name>
+  </types>
+</types>

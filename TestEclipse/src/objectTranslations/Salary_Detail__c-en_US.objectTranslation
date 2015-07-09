@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Salary Detail</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Salary Details</value>
+    </caseValues>
+    <fields>
+        <help><!-- Enter your bank account number. --></help>
+        <label><!-- Bank Account Number --></label>
+        <name>Bank_Account_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter bank name and branch name --></help>
+        <label><!-- Bank Details --></label>
+        <name>Bank_Details__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter basic salary of employee. --></help>
+        <label><!-- Basic --></label>
+        <name>Basic__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select employee&apos;s account to whom salary is credited. --></help>
+        <label><!-- Employee --></label>
+        <name>Employee__c</name>
+        <relationshipLabel><!-- Salary Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- In hand salary. --></help>
+        <label><!-- Gross Salary --></label>
+        <name>Gross_Salary__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter HRA of Employee. --></help>
+        <label><!-- HRA --></label>
+        <name>HRA__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select money transfer mode. --></help>
+        <label><!-- Mode of Pyment --></label>
+        <name>Mode_of_Pyment__c</name>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheque</masterLabel>
+            <translation><!-- Cheque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEFT</masterLabel>
+            <translation><!-- NEFT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RTGS</masterLabel>
+            <translation><!-- RTGS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter PF amount deducted in every month from employee salary. --></help>
+        <label><!-- PF Deduction --></label>
+        <name>PF_Deduction__c</name>
+    </fields>
+    <fields>
+        <help><!-- Salary is credited to individuals account on this date. --></help>
+        <label><!-- Salary Credit Date --></label>
+        <name>Salary_Credit_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter Special Allowance of Employee. --></help>
+        <label><!-- Special Allowance --></label>
+        <name>Special_Allowance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Salary. --></help>
+        <label><!-- Total Earning --></label>
+        <name>Total_Earning__c</name>
+    </fields>
+    <layouts>
+        <layout>Salary Detail Layout</layout>
+        <sections>
+            <label><!-- Bank Details --></label>
+            <section>Bank Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Payment Details --></label>
+            <section>Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- Salary Credit Details --></label>
+            <section>Salary Credit Details</section>
+        </sections>
+        <sections>
+            <label><!-- Salary Deduction Details --></label>
+            <section>Salary Deduction Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Bank Account number must be 10 digit. --></errorMessage>
+        <name>Length_of_bank_account_number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Bank Account Number once set can not be changed. --></errorMessage>
+        <name>No_change_to_account_number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Employee is Inactive. Salary records can not be created. --></errorMessage>
+        <name>Salary_Record_Can_Not_Be_Created</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Salary Details of all Employees.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Bank_Account_Number__c</fullName>
+        <description>Bank account number of individual employee.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter your bank account number.</inlineHelpText>
+        <label>Bank Account Number</label>
+        <length>25</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bank_Details__c</fullName>
+        <description>Displays bank name and branch name</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter bank name and branch name</inlineHelpText>
+        <label>Bank Details</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Basic__c</fullName>
+        <description>Basic salary of employee.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter basic salary of employee.</inlineHelpText>
+        <label>Basic</label>
+        <precision>12</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Employee__c</fullName>
+        <description>Salary is credited to employee account.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select employee&apos;s account to whom salary is credited.</inlineHelpText>
+        <label>Employee</label>
+        <referenceTo>Employee__c</referenceTo>
+        <relationshipLabel>Salary Details</relationshipLabel>
+        <relationshipName>Salary_Details</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Gross_Salary__c</fullName>
+        <description>Gross salary is salary in hand after deducting PF.</description>
+        <externalId>false</externalId>
+        <formula>Total_Earning__c  -  PF_Deduction__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>In hand salary.</inlineHelpText>
+        <label>Gross Salary</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HRA__c</fullName>
+        <description>House Rent Allowance of Employee.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter HRA of Employee.</inlineHelpText>
+        <label>HRA</label>
+        <precision>12</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mode_of_Pyment__c</fullName>
+        <description>It include money transfer mode.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select money transfer mode.</inlineHelpText>
+        <label>Mode of Pyment</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Cash</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cheque</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NEFT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RTGS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>PF_Deduction__c</fullName>
+        <description>Display Provident Fund deducted from Employee salary.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter PF amount deducted in every month from employee salary.</inlineHelpText>
+        <label>PF Deduction</label>
+        <precision>12</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Salary_Credit_Date__c</fullName>
+        <description>Salary is credited to individuals account on this date.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salary is credited to individuals account on this date.</inlineHelpText>
+        <label>Salary Credit Date</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Special_Allowance__c</fullName>
+        <description>Special Allowance of Employee</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter Special Allowance of Employee.</inlineHelpText>
+        <label>Special Allowance</label>
+        <precision>12</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Earning__c</fullName>
+        <description>Calculate total earnings.</description>
+        <externalId>false</externalId>
+        <formula>Basic__c  +  HRA__c  +  Special_Allowance__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total Salary.</inlineHelpText>
+        <label>Total Earning</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Salary Detail</label>
+    <nameField>
+        <displayFormat>SAL-{000000}</displayFormat>
+        <label>Salary ID</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Salary Details</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Length_of_bank_account_number</fullName>
+        <active>true</active>
+        <description>Bank Account Number must be 10 digit.</description>
+        <errorConditionFormula>LEN(Bank_Account_Number__c) &lt;&gt; 10</errorConditionFormula>
+        <errorMessage>Bank Account number must be 10 digit.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>No_change_to_account_number</fullName>
+        <active>true</active>
+        <description>If account number is set once, it should not be edited next time.</description>
+        <errorConditionFormula>ISCHANGED( Bank_Account_Number__c )</errorConditionFormula>
+        <errorMessage>Bank Account Number once set can not be changed.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Salary_Record_Can_Not_Be_Created</fullName>
+        <active>true</active>
+        <description>If Employee is Inactive Salary record can not be created.</description>
+        <errorConditionFormula>Employee__r.Is_Active__c  = False  &amp;&amp;  Employee__r.Is_on_Notice_Period__c = False</errorConditionFormula>
+        <errorMessage>Employee is Inactive. Salary records can not be created.</errorMessage>
+    </validationRules>
+</CustomObject>

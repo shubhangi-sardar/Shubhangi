@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Allotment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Allotments</value>
+    </caseValues>
+    <fields>
+        <help><!-- Select Employee of a Project. --></help>
+        <label><!-- Employee ID --></label>
+        <name>Employee_ID__c</name>
+        <relationshipLabel><!-- Project Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select Project associated with Employee --></help>
+        <label><!-- Project ID --></label>
+        <name>Project_ID__c</name>
+        <relationshipLabel><!-- Employee List --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

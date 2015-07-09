@@ -1,0 +1,4 @@
+Hello,
+
+A deal is successful.
+Deal Amount : {!Opportunity.Amount}

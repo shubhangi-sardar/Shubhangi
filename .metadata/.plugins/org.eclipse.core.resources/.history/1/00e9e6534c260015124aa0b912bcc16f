@@ -1,0 +1,6 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Hello</h1>
+  This is your second Page
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

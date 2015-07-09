@@ -1,0 +1,4 @@
+Hello,
+
+Lead follow up date is elapsed.
+Follow up date was {!Lead.Follow_Up_Of_Date__c}.
