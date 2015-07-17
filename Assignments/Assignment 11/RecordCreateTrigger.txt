@@ -1,0 +1,8 @@
+trigger CreateRecordTrigger on EFT_Transaction_Status__c (after insert) {
+    
+    if(Trigger.isAfter && Trigger.isInsert){
+        
+        CreateRecortHandler.methodCreateRecordHandler(Trigger.new);
+    }
+
+}

@@ -6,6 +6,31 @@ public class ArrayOperations {
         sortAscending();
     }*/
     
+    public void methodCheckOddOrEven(Integer testNumber ){
+        
+        Integer num = testNumber;
+        if(Math.mod(num, 2) == 0)
+            System.debug(num + ' is even Number');
+        else
+            System.debug(num + ' is odd Number');
+    }
+    
+    public void testArray(Integer sizeOfArray){
+        
+        Integer size = sizeOfArray;
+        List <Integer> sampleList = new Integer[size];
+        Integer indexValue = 11;
+        System.debug('Size of Array is : '+size);
+        System.debug('Array Values are :');
+        for(Integer i=0; i<size; i++){
+            sampleList[i]=indexValue;
+            System.debug('Index '+i+' is '+sampleList[i]);
+            indexValue++;
+        }
+        
+    }
+    
+    
     public void sortAscending(){
         System.debug('Array in Ascending Order : ');
         Integer temp, i;
@@ -80,5 +105,68 @@ public class ArrayOperations {
             
         }
     }
+    
+    public void summationOfNumbers(Integer testNumber){
+        Integer num = testNumber, sum = 0;
+        for(Integer i=testNumber; i>0; i--){
+            sum = sum + i;
+        }
+        System.debug('Summation from 1 to ' +num+' is '+sum);
+    }
+    
+    public void simpleInterest(Double principle, Double rate, Double years){
+        
+        Double prncpl = principle;
+        Double rt = rate;
+        Double yrs = years;
+        
+        Double simpleInterest = (principle*rate*years)/100;
+        System.debug('Simple Interest is : '+simpleInterest);
+    }
+    
+    
+    public void loopDemo(){
+        List <Account> accountObj = [Select Id, Name From Account];
+        Integer i;
+    	for(i = 0; i<accountObj.size(); i++){
+            System.debug('Traditional For Loop ' +accountObj[i]);
+        }
+        
+        for(Account a: accountObj ){
+            System.debug('For Each Loop ' +a);
+        }
+        
+        for(Account a : [Select Id, Name From Account]){
+            
+            System.debug('Advanced For Loop ' + a);
+        }
+        
+        i=0;
+        while(i<accountObj.size()){
+            System.debug('While Loop ' +accountObj[i]);
+            i++;
+        }
+    }
+    
+    public void demoSet(){
+        Set <Lead> leadRecords = new Set <Lead>([Select Id, Name From Lead]);
+        //leadRecords = [Select Id, Name From Lead];
+        for(Lead i : leadRecords){
+            System.debug('Lead Record '+ i);
+        }
+    }
+    
+    public void testFunctionLead(){
+        List<Lead> leadList = [Select Id, Name, Status FROM Lead WHERE Status = 'Closed - Not Converted'];
+        System.debug(leadList);
+        for(Lead L : leadList){
+            L.Status = 'Status changed';
+        }
+        Update LeadList;
+        System.debug(LeadList);
+    }
+
+    
+       
 
 }

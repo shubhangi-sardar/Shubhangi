@@ -1,0 +1,32 @@
+public class CreateRecortHandler {
+
+    public static boolean flag = true;
+    public static void methodCreateRecordHandler(List <EFT_Transaction_Status__c> eFTList){
+        List <Case> caseList = new List <Case>();
+        Map<Id, Sales_Header__c> myMap = new Map<Id, Sales_Header__c>();
+        Set<Id> salesHeaderID = new Set<Id>();
+        for(EFT_Transaction_Status__c e : eFTList){
+            salesHeaderID.add(e.Sales_Header__c);    
+        }
+        for(Sales_Header__c sh : [Select Id, Name, Status__c, Account__c, Contact__c From Sales_Header__c Where Id IN : salesHeaderID]){
+            myMap.put(sh.Id, sh);
+        }
+        for(EFT_Transaction_Status__c e : eFTList ){
+            if(myMap.containsKey(e.Sales_Header__c)){
+                Sales_Header__c obj = myMap.get(e.Sales_Header__c);
+                if(e.Method_Name__c == 'Credit Card Address Verify' && 
+                   e.Transaction_Status__c == 'Declined' && 
+                   obj.Status__c == 'Open'){
+                   caseList.add(new Case(AccountId = obj.Account__c, 
+                                      ContactId = obj.Contact__c, 
+                                      Origin = 'Phone', 
+                                      Status = 'New', Open_Sales_Order__c = obj.Name));
+                }
+            }
+        }
+        if(flag){
+            Insert caseList;  
+            flag = false;
+        }
+    }
+}

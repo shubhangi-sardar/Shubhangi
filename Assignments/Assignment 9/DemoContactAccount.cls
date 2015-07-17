@@ -6,8 +6,10 @@ public class DemoContactAccount {
         }
         Integer countContact = contacts.size();
         Account acc = new Account();
-     //   if(acc.Name == 'Eternus')
-       //     insert acc.Count__c = countContact;
+           if(acc.Name == 'Eternus'){
+               acc.count__c = countContact;
+               update acc;
+           }
     }
 
 }
